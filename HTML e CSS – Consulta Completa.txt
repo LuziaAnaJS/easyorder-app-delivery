@@ -1,0 +1,320 @@
+HTML e CSS – Consulta Completa Avançada 
+
+📄 ESTRUTURA BÁSICA DO HTML
+html
+Define o documento HTML. Exemplo: toda página HTML começa com <html> e termina com </html>, englobando todo o conteúdo.
+
+head
+Contém metadados. Exemplo: dentro do <head> você coloca o título da aba, links para arquivos CSS externos, scripts JavaScript e configurações de codificação como UTF-8.
+
+body
+Contém o conteúdo visível. Exemplo: textos, imagens, vídeos, botões e links são inseridos dentro do <body>.
+
+🏛️ GRANDES SEÇÕES DO HTML
+header
+Cabeçalho da página ou seção. Pode conter logo, menu, etc.
+
+nav
+Define a área de navegação da página (menu de links).
+
+main
+Conteúdo principal da página. Deve ser único.
+
+section
+Seção genérica de conteúdo. Usada para agrupar conteúdos relacionados.
+
+article
+Conteúdo independente, como posts ou notícias.
+
+aside
+Conteúdo complementar, como barras laterais.
+
+footer
+Rodapé da página ou de uma seção. Pode conter créditos, contatos, etc.
+
+📌 ELEMENTOS DE TEXTO
+h1 a h6
+São títulos, indo do maior (h1) ao menor (h6). Exemplo: um título principal da página deve ser h1, e subtítulos podem ser h2 ou h3.
+
+p
+Parágrafo de texto. Exemplo: cada bloco de texto explicativo é colocado dentro de uma tag <p>.
+
+span
+Usado para destacar parte de um texto. Exemplo: para colorir uma palavra dentro de um parágrafo sem quebrar linha, você envolve a palavra com <span> e aplica estilo.
+
+b
+Deixa o texto em negrito visualmente. Exemplo: para dar ênfase visual a uma palavra como "importante", você usa <b>.
+
+strong
+Semelhante ao <b>, mas com significado semântico. Exemplo: indicar uma palavra importante tanto para o leitor quanto para mecanismos de busca.
+
+i
+Texto em itálico. Exemplo: usado para nomes de obras ou palavras estrangeiras.
+
+em
+Itálico com ênfase semântica. Exemplo: para dar destaque realçado em leitores de tela, além da aparência visual.
+
+br
+Insere uma quebra de linha. Exemplo: pular uma linha entre frases sem iniciar novo parágrafo.
+
+hr
+Adiciona uma linha horizontal. Exemplo: usada para dividir seções dentro de uma página.
+
+📋 LISTAS
+ul
+Lista não ordenada. Exemplo: lista com marcadores como "• Item 1, • Item 2".
+
+ol
+Lista ordenada. Exemplo: lista numerada como "1. Passo um, 2. Passo dois".
+
+li
+Item da lista. Exemplo: cada elemento dentro de uma <ul> ou <ol> é um <li>.
+
+dl / dt / dd
+Lista de definição. Exemplo: <dt> define um termo e <dd> a sua descrição, como em glossários.
+
+🔗 LINKS E MÍDIA
+a
+Cria um link. Exemplo: <a href="https://site.com">Clique aqui</a> cria um link clicável.
+
+img
+Insere imagem. Exemplo: <img src="logo.png" alt="Logo da empresa"> exibe a imagem e descreve para leitores de tela.
+
+figure / figcaption
+Agrupa imagem com legenda. Exemplo: uma foto de produto com uma descrição abaixo usando <figcaption>.
+
+source
+Define as fontes de mídia para <audio> e <video>.
+
+iframe
+Incorpora conteúdo externo (como vídeos do YouTube).
+
+🧱 DISPLAY
+- Define como o elemento será exibido.
+
+- **block**: Ocupa toda a largura disponível.
+- **inline**: Fica na mesma linha de outros elementos.
+- **inline-block**: Mescla inline com capacidades de tamanho.
+- **none**: Oculta o elemento.
+- **flex**: Ativa o layout flexível.
+- **grid**: Ativa layout em grade.
+
+📐 UNIDADES DE MEDIDA
+px
+Unidade fixa. Exemplo: 20px sempre terá o mesmo tamanho, independente da tela.
+
+%
+Relativa ao elemento pai. Exemplo: width: 50% faz o elemento ocupar metade da largura do container.
+
+em
+Relativa à fonte do elemento pai. Exemplo: 2em equivale ao dobro da fonte do pai.
+
+rem
+Relativa à fonte raiz (geralmente definida no <html>). Exemplo: 1.5rem será 1,5x o tamanho base.
+
+vh / vw
+Relativas à altura (vh) ou largura (vw) da tela. Exemplo: 100vh ocupa toda a altura da janela do navegador.
+
+🎨 CORES E BACKGROUND
+color
+Cor do texto. Exemplo: color: red deixa o texto vermelho.
+
+background-color
+Cor de fundo. Exemplo: background-color: yellow deixa o fundo amarelo.
+
+background-image
+- Define uma imagem de fundo.
+- Exemplo: `background-image: linear-gradient(to right, red, blue);`
+
+background-position
+- Define a posição da imagem de fundo.
+- Ex: `top`, `center`, `bottom right`...
+
+background-size
+- Define o tamanho da imagem.
+- **auto** – tamanho original
+- **cover** – cobre todo o container
+- **contain** – ajusta para caber
+
+background-repeat
+- Controla a repetição da imagem de fundo.
+- **repeat**, **no-repeat**, **repeat-x**, **repeat-y**
+
+🖼️ BOX MODEL
+margin
+Espaço externo. Exemplo: separa o elemento de outros ao redor.
+
+padding
+Espaço interno. Exemplo: distancia o conteúdo da borda interna.
+
+border
+Borda ao redor do conteúdo. Exemplo: criar uma borda preta de 1 pixel em volta de uma caixa.
+Exemplo: `1px solid black`.
+
+width / height
+Define largura e altura. Exemplo: width: 200px e height: 100px.
+
+🌫️ SOMBRAS
+box-shadow
+- Adiciona sombra ao elemento.
+- Sintaxe: `offset-x offset-y blur-radius spread-radius cor`
+- Para sombra interna, use `inset`.
+- Exemplo: `box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);`
+
+🧭 POSITIONAMENTO
+position
+- Define como o elemento será posicionado:
+- **static** – padrão.
+- **relative** – relativo à posição original.
+- **absolute** – relativo ao elemento pai com position.
+- **fixed** – fixo na tela.
+- **sticky** – fixo quando atingir certa posição na rolagem.
+
+top, right, bottom, left
+- Usado junto com position para definir deslocamentos.
+
+✍️ TIPOGRAFIA
+font-size
+- Tamanho da fonte (em px, em, rem).
+
+font-style
+- Estilo da fonte.
+- **normal**, **italic**, **oblique**
+
+font-weight
+- Espessura do texto.
+- **normal**, **bold**, ou numérico (100–700)
+
+line-height
+- Altura da linha.
+
+text-align
+- Alinhamento horizontal do texto: `left`, `center`, `right`, `justify`
+
+text-transform
+- Transforma texto:
+- **uppercase** – maiúsculo
+- **lowercase** – minúsculo
+- **capitalize** – primeira letra em maiúsculo
+
+text-decoration
+- Adiciona decorações ao texto:
+- **underline**, **line-through**, **none**, etc.
+- Com `text-decoration-style`: `solid`, `dashed`, `dotted`, `double`, `wavy`
+🧠 HERANÇA DE ESTILOS
+Alguns estilos como cor e fonte passam automaticamente para os filhos. Exemplo: se você definir color: blue no body, todos os textos herdarão essa cor, a menos que sejam sobrescritos.
+
+🎯 SELETORES CSS
+Seletor universal
+- `* {}` – Aplica estilos a todos os elementos.
+
+Seletor de classe
+- `.classe {}`
+
+Seletor de ID
+- `#id {}`
+
+Seletor de atributo
+- `[type="text"] {}`
+
+Combinadores
+- **descendente**: `div p {}`
+- **filho direto**: `div > p {}`
+- **irmão adjacente**: `h1 + p {}`
+- **irmão geral**: `h1 ~ p {}`
+
+
+🧩 PSEUDO-CLASSES
+Usadas para definir estados ou condições. Exemplo: :hover muda a cor de um botão quando o mouse passa por cima.
+
+:link
+Aplica estilo ao link não visitado.
+
+:visited
+Aplica ao link visitado.
+
+:hover
+Quando o mouse passa por cima.
+
+:active
+Quando o link está sendo clicado.
+
+:focus
+Quando um elemento recebe foco (input selecionado).
+
+:nth-child(n)
+Aplica ao n-ésimo filho.
+
+:first-child / :last-child
+Primeiro ou último filho de um elemento.
+
+:checked
+Quando checkbox ou radio estiver marcado.
+
+:disabled / :enabled
+Para inputs ativados ou desativados.
+
+✨ PSEUDO-ELEMENTOS
+Criam conteúdo visual extra. Exemplo: ::before pode adicionar um ícone antes do texto, ::selection muda a cor do texto quando selecionado.
+
+::before
+Insere conteúdo antes do conteúdo real.
+
+::after
+Insere conteúdo depois do conteúdo real.
+
+::first-letter
+Estiliza a primeira letra.
+
+::first-line
+Estiliza a primeira linha.
+
+::selection
+Estiliza o conteúdo selecionado pelo usuário.
+
+⚙️ OUTRAS TAGS IMPORTANTES
+blockquote: 
+- usado para citações longas, exibidas em bloco.
+q: 
+- usado para citações curtas, embutidas no texto.
+abbr: 
+- exibe o significado de uma sigla ao passar o mouse.
+code: 
+- exibe códigos como monoespaçado.
+pre: 
+- mantém a formatação do texto com quebras de linha.
+var, samp, kbd: 
+- usadas para códigos, saídas e entradas de teclado.
+time: 
+- marca uma data ou hora.
+address: exibe informações de contato.
+
+🧾 FORMULÁRIOS
+Usados para entrada de dados do usuário.
+input: campos de texto, email, senha etc.
+textarea: caixa de texto grande.
+select: caixa de seleção com opções.
+button: botões de envio ou ação.
+Exemplo: um campo de nome com rótulo, um botão “Enviar”, e validações com required.
+
+📱 RESPONSIVIDADE
+Técnicas para adaptar o layout a diferentes tamanhos de tela.
+
+@media: define estilos para resoluções específicas.
+flex e grid: ajudam no layout fluido.
+Unidades como %, vh, vw são mais adaptáveis que px.
+Exemplo: menu que vira um hambúrguer no celular.
+
+🎛️ VARIÁVEIS CSS
+Permitem reaproveitamento de valores.
+Definidas com --nome dentro de :root.
+Usadas com var(--nome).
+Exemplo: --cor-principal: #3498db e depois usar background-color: var(--cor-principal).
+
+🧪 SCSS / SASS (pré-processadores CSS)
+Permitem escrever CSS com mais recursos:
+
+Variáveis: $cor: red
+Aninhamento: escrever CSS dentro de CSS
+Mixins: criar funções reutilizáveis
+Exemplo: criar um mixin para botão com padding, cor e sombra, e aplicar em vários botões com @include.

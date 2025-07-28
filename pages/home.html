@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Pedidos | EasyOrder</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="topo-endereco">
+      <div class="endereco" onclick="editarEndereco()">
+        <img src="../assets/icons/icone-gps.png" alt="Ícone de localização" />
+        <span class="endereco-atual">Rua Exemplo, 123</span>
+      </div>
+
+      <div class="barra-busca">
+        <input type="text" placeholder="Busca..." />
+        <img
+          src="../assets/icons/lupa1.png"
+          alt="Icone de Lupa"
+          class="icone-lupa"
+        />
+      </div>
+    </header>
+
+    <main class="container">
+      <div>
+        <div class="opcoes-escolha">
+          <div class="home-opcoes">
+            <figure>
+              <img src="../assets/icons/iconeburger.png" alt="Capa Fast Food" />
+              <figcaption>Fast Food</figcaption>
+            </figure>
+          </div>
+          <div class="home-opcoes">
+            <figure>
+              <img src="../assets/icons/sushi.png" alt="Capa Comida Japonesa" />
+              <figcaption>Japonesa</figcaption>
+            </figure>
+          </div>
+          <div class="home-opcoes">
+            <figure>
+              <img src="../assets/icons/spaghetti.png" alt="Capa Massas" />
+              <figcaption>Massas</figcaption>
+            </figure>
+          </div>
+          <div class="home-opcoes">
+            <figure>
+              <img
+                src="../assets/icons/comida.png"
+                alt="Capa Comida Brasileira"
+              />
+              <figcaption>Brasileira</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="destaques">
+          <div class="destaque-item">
+            <span>Almoço do dia</span>
+            <img src="../assets/icons/pratocomida.png" alt="Prato de Comida" />
+          </div>
+          <div class="destaque-item">
+            <span>Promos da noite</span>
+            <img src="../assets/icons/noodles.png" alt="Macarrão" />
+          </div>
+        </div>
+      </div>
+
+      <h1>Restaurantes Recomendados</h1>
+
+      <div class="restaurantes">
+        <div class="opcoes-restaurantes">
+          <img
+            src="..//assets/images/fastfood-capa.jpg"
+            alt="Capa Lanchonete"
+          />
+
+          <div class="info-restaurante">
+            <p class="nome-restaurante">Lanchonete Mão na Massa</p>
+
+            <div class="detalhes-restaurante">
+              <span class="avaliacao">
+                <img src="../assets/icons/icone-estrela.png" alt="Estrela" />
+                <span class="nota">4,8</span>
+              </span>
+
+              <span class="tempo">5 min</span>
+
+              <span class="distancia">1,5 km</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="opcoes-restaurantes">
+          <img
+            src="../assets/images/massasfood-capa.jpg"
+            alt="Restaurante de Massas"
+          />
+
+          <div class="info-restaurante">
+            <p class="nome-restaurante">Pizza e Macarrão</p>
+
+            <div class="detalhes-restaurante">
+              <span class="avaliacao">
+                <img src="../assets/icons/icone-estrela.png" alt="Estrela" />4,8
+              </span>
+              <span class="tempo">5 min</span>
+              <span class="distancia">1,5 km</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="opcoes-restaurantes">
+          <img
+            src="../assets/images/japanfood-capa.jpg"
+            alt="Restaurante Japonês"
+          />
+
+          <div class="info-restaurante">
+            <p class="nome-restaurante">Nakimiru Sushi</p>
+
+            <div class="detalhes-restaurante">
+              <span class="avaliacao">
+                <img src="../assets/icons/icone-estrela.png" alt="Estrela" />4,9
+              </span>
+              <span class="tempo">10 min</span>
+              <span class="distancia">2,5 km</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="opcoes-restaurantes">
+          <img
+            src="../assets/images/pratocomida-capa.jpg"
+            alt="Restaurante Comida Brasileira"
+          />
+
+          <div class="info-restaurante">
+            <p class="nome-restaurante">Sabor do Nordeste</p>
+
+            <div class="detalhes-restaurante">
+              <span class="avaliacao">
+                <img src="../assets/icons/icone-estrela.png" alt="Estrela" />5,0
+              </span>
+              <span class="tempo">7 min</span>
+              <span class="distancia">2 km</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-nav">
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fas fa-utensils"></i> <span>Restaurante</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-truck"></i> <span>Delivery</span> </a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-shopping-cart"></i>
+              <span>Carrinho</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> <span>Perfil</span> </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

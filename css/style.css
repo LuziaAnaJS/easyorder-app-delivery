@@ -1,0 +1,463 @@
+/* Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2rem;
+  max-width: 60rem;
+  min-height: 100vh;
+  padding-bottom: 8rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  box-shadow: inset 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+input {
+  padding: 1.4rem;
+  margin: 0.2rem;
+  background-color: white;
+  box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.botao {
+  background-color: #993c38;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  word-break: break-word;
+  font-size: clamp(2.3rem, 2.5vw, 1.5rem);
+}
+
+a {
+  color: #993c38;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+img {
+  margin: 1.5rem;
+  width: 5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    padding: 4rem;
+    max-width: 100%;
+  }
+  .botao {
+    font-size: 1.8rem;
+    padding: 1.2rem 3rem;
+  }
+  input {
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    width: 100%;
+    max-width: 50rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.botao-comecar:hover,
+.botao-cadastrar:hover,
+.botao-entrar:hover {
+  background-color: #b44a45;
+  transform: scale(1.03);
+}
+
+.logo-inicial {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* PÁGINA CADASTRO DE USÚARIO */
+
+.icone-redesocial {
+  width: 2.5rem;
+  padding: 0.2rem;
+  margin: 1rem;
+}
+
+.pag-cadastro {
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* PÁGINA DE LOGIN  */
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+/* PÁGINA HOME - TOPO */
+
+.topo-endereco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dc2d23;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  padding: 3rem 2rem 1.5rem;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.endereco {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.endereco img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.barra-busca {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 30rem;
+  box-sizing: border-box;
+}
+
+.barra-busca input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.6rem;
+}
+
+.icone-lupa {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+@media (min-width: 60rem) {
+  .barra-busca {
+    max-width: 50rem;
+  }
+
+  .barra-busca input {
+    width: 40rem;
+    font-size: 1.6rem;
+  }
+
+  .icone-lupa {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* PÁGINA HOME - OPÇÕES DE TIPO DE COMIDA */
+
+.opcoes-escolha {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.5rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.home-opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1bebe72;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  width: 5rem;
+  box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.home-opcoes img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0;
+}
+
+.home-opcoes figcaption {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 60rem) {
+  .opcoes-escolha {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .home-opcoes figure {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    gap: 0.5rem;
+  }
+
+  .home-opcoes img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+/* PÁGINA HOME - PROMOÇÕES */
+
+.destaques {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.destaque-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dc2d23;
+  color: white;
+  font-weight: 700;
+  width: 15rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 1.5rem;
+  font-weight: 900;
+  gap: 0.5rem;
+  box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.destaque-item img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+@media (min-width: 60rem) {
+  .destaques {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .destaque-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    min-width: 18rem;
+  }
+
+  .destaque-item img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* PÁGINA HOME - RESTAURANTES */
+
+.restaurantes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.opcoes-restaurantes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: #f4bcbc72;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.opcoes-restaurantes img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.info-restaurante {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nome-restaurante {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.detalhes-restaurante {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.avaliacao img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.nota,
+.tempo,
+.distancia {
+  font-weight: 600;
+}
+
+/* FOOTER NAVEGAÇÃO */
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  padding: 1rem 0;
+  border-top: 0.1rem solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.footer-nav nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  gap: 4rem;
+}
+
+.footer-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555;
+  font-size: 1.4rem;
+}
+
+.footer-nav a i {
+  font-size: 2rem;
+  color: #dc2d23;
+  margin-right: 0.4rem;
+}
+
+.footer-nav a:hover {
+  color: #b44a45;
+  transform: scale(1.03);
+}
+
+main {
+  min-height: 100vh;
+  padding-bottom: 8rem;
+  box-sizing: border-box;
+}
+
+/* PÁGINA DE RESTAURANTES - BRASILEIRA */
